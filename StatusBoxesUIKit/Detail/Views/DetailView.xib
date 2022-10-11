@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21223" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21204"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oj0-gt-jvw">
+                    <rect key="frame" x="100" y="50" width="44" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TX4-rC-eOm">
+                    <rect key="frame" x="153.66666666666666" y="430.66666666666669" width="106.99999999999997" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Go to login"/>
+                    <connections>
+                        <action selector="goToLogin:" destination="-1" eventType="touchUpInside" id="85m-PX-dUt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BG4-V0-sky">
+                    <rect key="frame" x="153.66666666666666" y="345.66666666666669" width="112.99999999999997" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Go to home"/>
+                    <connections>
+                        <action selector="goToHomeButton:" destination="-1" eventType="touchUpInside" id="sVd-23-BQ2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="TX4-rC-eOm" firstAttribute="top" secondItem="BG4-V0-sky" secondAttribute="bottom" constant="50" id="5ve-ms-UD5"/>
+                <constraint firstItem="Oj0-gt-jvw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="86x-MY-yCg"/>
+                <constraint firstItem="TX4-rC-eOm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="VQX-Lr-PnS"/>
+                <constraint firstItem="BG4-V0-sky" firstAttribute="leading" secondItem="TX4-rC-eOm" secondAttribute="leading" id="WrA-v0-1K6"/>
+                <constraint firstItem="TX4-rC-eOm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="atX-Jm-io5"/>
+                <constraint firstItem="Oj0-gt-jvw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="i0r-g7-N9B"/>
+            </constraints>
+            <point key="canvasLocation" x="-657" y="-56"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
